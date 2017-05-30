@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/estilo.css">
+  <link rel="stylesheet" type="text/js" href="js/game.js">
+  <title>jQuery UI Droppable</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <style>
+   #draggable { width: 150px; height: 50px; padding: 0.5em; margin: 50px 200px 10px 10px; background-color: red;}
+   #droppable { width: 100px; height: 50px; padding: 0.5em; margin: -115px 0px 0px 1000px; background-color: grey;}
+   
+  #draggable1 { width: 150px; height: 50px; padding: 0.5em; margin: 50px 200px 10px 10px; background-color: yellow; }
+  #droppable1 { width: 100px; height: 50px; padding: 0.5em; margin: -115px 0px 0px 1000px;; background-color: grey;}
+  
+  #draggable2 { width: 150px; height: 50px; padding: 0.5em; margin: 50px 200px 10px 10px; background-color: blue;}
+  #droppable2 { width: 100px; height: 50px; padding: 0.5em; margin: -115px 0px 0px 1000px; background-color: grey;}
+  
+  #draggable3 { width: 150px; height: 50px; padding: 0.5em; margin: 50px 200px 10px 10px; background-color: green;}
+  #droppable3 { width: 100px; height: 50px; padding: 0.5em; margin: -115px 0px 0px 1000px;; background-color: grey;}
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script> 
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideToggle("slow");
+    });
+});
+</script>
+
+<style> 
+#panel, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+}
+
+#panel {
+    padding: 50px;
+    display: none;
+}
+</style>
+  <script>
+  $( function() {
+    $( "#draggable" ).draggable();
+    $( "#droppable" ).droppable({
+      drop: function( event, ui ) {
+        $( this )
+          .addClass( "ui-state-highlight" )
+          .find( "p" )
+            .html( "Acertou!" );
+      }
+    });
+  } );
+  </script>
+    <script>
+  $( function() {
+    $( "#draggable1" ).draggable();
+    $( "#droppable1" ).droppable({
+      drop: function( event, ui ) {
+        $( this )
+          .addClass( "ui-state-highlight" )
+          .find( "p" )
+            .html( "Acertou!" );
+      }
+    });
+  } );
+  </script>
+    <script>
+  $( function() {
+    $( "#draggable2" ).draggable();
+    $( "#droppable2" ).droppable({
+      drop: function( event, ui ) {
+        $( this )
+          .addClass( "ui-state-highlight" )
+          .find( "p" )
+            .html( "Acertou!" );
+      }
+    });
+  } );
+  </script>
+    <script>
+  $( function() {
+    $( "#draggable3" ).draggable();
+    $( "#droppable3" ).droppable({
+      drop: function( event, ui ) {
+        $( this )
+          .addClass( "ui-state-highlight" )
+          .find( "p" )
+            .html( "Acertou!" );
+      }
+    });
+  } );
+  </script>
+</head>
+<body>
+		<div id="flip">Math Game</div>
+		<div id="panel">Instrucoes do jogo.<br>
+						Use as 4 expressoes que estao na parte esquerda(Retangulos).<br>
+						Faça o calculo.<br>
+						Arraste a expressao ate o resultado correto(Quadrados).<br>
+						Para saber se a resposta esta certa ou errada basta soltar a expressao e puxa-la novamente.<br>
+						Bom jogo!</br></div>
+						
+		<div id="draggable" class="ui-widget-content">
+		  <p>Descubra o valor de X: 50X+ 100X = 15X</p>
+		</div>
+		 
+		<div id="droppable" class="ui-widget-header">
+		  <p>X= 10</p>
+		</div>
+		<div id="draggable1" class="ui-widget-content">
+		  <p>Quanto é 5X+8-3X=X+24?</p>
+		</div>
+		 
+		<div id="droppable1" class="ui-widget-header">
+		  <p>X=16</p>
+		</div>
+		
+		<div id="draggable2" class="ui-widget-content">
+		  <p>Quanto é 6X-10+2X=06?</p>
+		</div>
+		<div id="droppable2" class="ui-widget-header">
+		  <p>X=2</p>
+		</div>
+		
+		<div id="draggable3" class="ui-widget-content">
+		  <p>Quanto é X+2+3=10?</p>
+		</div>
+		<div id="droppable3" class="ui-widget-header">
+		  <p>X=5</p>
+		</div>
+</body>
+</html>

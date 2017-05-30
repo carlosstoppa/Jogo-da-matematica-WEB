@@ -1,0 +1,71 @@
+body{
+	font-family:"Arial", Georgia, Serif; /* Estilo da fonte */
+}
+#draggable{
+	width:100px; /* Largura */
+	height:100px; /* Altura*/
+	text-align:center; /* Alinhar texto*/
+	position:relative; /* Posicao relativa ao layout*/
+	margin:0 auto; /* Centralizar */
+	font-style:bold;	
+}
+#dropable{
+	width:100px; /* Largura */
+	height:100px; /* Altura*/
+	text-align:center; /* Alinhar texto*/
+	position:relative; /* Posicao relativa ao layout*/
+	margin:0 auto; /* Centralizar */
+	font-style:bold;
+	color:grey; /* Cor */
+}
+#draggable1{
+	width:100px; /* Largura */
+	height:100px; /* Altura*/
+	text-align:center; /* Alinhar texto*/
+	position:relative; /* Posicao relativa ao layout*/
+	margin:0 auto; /* Centralizar */
+	font-style:bold;
+}
+#dropable1{
+	width:100px; /* Largura */
+	height:100px; /* Altura*/
+	text-align:center; /* Alinhar texto*/
+	position:relative; /* Posicao relativa ao layout*/
+	margin:0 auto; /* Centralizar */
+	font-style:bold;
+	color:grey; /* Cor */
+}
+#draggable2{
+	width:100px; /* Largura */
+	height:100px; /* Altura*/
+	text-align:center; /* Alinhar texto*/
+	position:relative; /* Posicao relativa ao layout*/
+	margin:0 auto; /* Centralizar */
+	font-style:bold;	
+}
+#dropable2{
+	width:100px; /* Largura */
+	height:100px; /* Altura*/
+	text-align:center; /* Alinhar texto*/
+	position:relative; /* Posicao relativa ao layout*/
+	margin:0 auto; /* Centralizar */
+	font-style:bold;
+	color:grey; /* Cor */
+}
+#draggable3{
+	width:100px; /* Largura */
+	height:100px; /* Altura*/
+	text-align:center; /* Alinhar texto*/
+	position:relative; /* Posicao relativa ao layout*/
+	margin:0 auto; /* Centralizar */
+	font-style:bold;	
+}
+#dropable3{
+	width:100px; /* Largura */
+	height:100px; /* Altura*/
+	text-align:center; /* Alinhar texto*/
+	position:relative; /* Posicao relativa ao layout*/
+	margin:0 auto; /* Centralizar */
+	font-style:bold;
+	color:grey; /* Cor */
+}
